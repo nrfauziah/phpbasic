@@ -4,54 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford Registrasi Warga</title>
-</head>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<body>
-    <div class="container">
-   
-    <div class="row">
-        <div class="col-md-8">
-        <h2>Form Registrasi Warga</h2>
-        <hr>
-        <form action="index.php" method="post">
-        <table class="table table-bordered">
-            <tr>
-                <th colspan="2">Biodata Pribadi</th>
-                
-            </tr>
-            <tr>
-                <td>Nomor KTP</td>
-                <td> <input class="form-group" type="text" name="no_ktp" id="no_ktp"></td>
-            </tr>
-            <tr>
-                <td>Nama Lengkap</td>
-                <td><input class="form-group" type="text" name="nama_lengkap" id="nama_lengkap"></td>
-            </tr>
-            <tr>
-                <td>Alamat Lengkap</td>
-                <td> <input class="form-group" type="text" name="alamat_lengkap" id="alamat_lengkap"></td>
-            </tr>
-            <tr>
-                <td>Nomor HP</td>
-                <td><input class="form-group" type="text" name="no_hp" id="no_hp"></td>
-            </tr>
-            <tr>
-                <td colspan="2"> <button class="btn btn-success" name="daftar" type="submit">Daftar </button></td>
-                
-            </tr>
-        </table>
-      
-       
-        </form>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background: url(https://i.pinimg.com/236x/b5/74/e0/b574e060f76ae0f50d256305405ede91.jpg);
+            text-decoration-color: white;
+        }
+
+        .card {
+            width: 650px;
+            height: 400px;
+            margin-top: 100px;
+        }
+        .card-header {
+            width: 650px;
+        }
+        .container {
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="card">
+            <form action="index.php" method="POST">
+                <h4 class="card-header bg-dark text-white text-center">Form Registrasi Warga</h4>
+                    <div class="form-group row">
+                        <div class="card-body">
+                        <section class="base">
+                        <h4 class="col-sm-6 col-form-label" style="margin-left: 80px;">Data Pribadi</h4>
+                            <div class="form-group row justify-content-center mt-3">
+                                <!-- No KTP -->
+                                <label for="no_ktp" class="col-sm-3 col-form-label">Nomor KTP :</label>
+                                <div class="col-sm-6">
+                                        <input type="text" class="form-control mb-2" name="no_ktp" id="no_ktp" placeholder="321888">
+                                    </div>
+                                </div>
+
+                                <!-- Nama Lengkap -->
+                                <div class="form-group row justify-content-center">
+                                <label for="nama_lengkap" class="col-sm-3 col-form-label">Nama Lengkap :</label>
+                                <div class="col-sm-6">
+                                        <input type="text" class="form-control mb-2" name="nama_lengkap" id="nama_lengkap" placeholder="Nur Fauziah">
+                                    </div>
+                                </div>
+
+                                <!-- Alamat Lengkap -->
+                                <div class="form-group row justify-content-center">
+                                <label for="alamat_lengkap" class="col-sm-3 col-form-label">Alamat Lengkap :</label>
+                                <div class="col-sm-6">
+                                        <input type="text" class="form-control mb-2" name="alamat_lengkap" id="alamat_lengkap" placeholder="Depok">
+                                    </div>
+                                </div>
+
+                                <!-- Nomor HP -->
+                                <div class="form-group row justify-content-center">
+                                <label for="no_hp" class="col-sm-3 col-form-label">No HP :</label>
+                                <div class="col-sm-6">
+                                        <input type="text" class="form-control" name="no_hp" id="no_hp" placeholder="0856">
+                                    </div>
+                                </div>
+
+                                <!-- Button simpan & kembali -->
+                                <div class="form-group row justify-content-center">
+                                    <div class="col-sm-9 mt-4">
+                                        <button type="submit" class="btn btn-primary" name="daftar" value="daftar">Daftar</button>
+                                        <a href="index.php" class="btn btn-warning float-right" role="button">Kembali</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        </div>
+                    </div>
+            </form>
+            </div>
         </div>
-    </div>
-    </div>
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>

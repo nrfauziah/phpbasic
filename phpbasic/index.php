@@ -45,7 +45,7 @@ include('mylib/myDb.php');
     <div class="col-12">
         <div class="mt-5">
             <h2>Data Warga</h2>
-            <a href="form-daftar.php" class="btn btn-secondary mt-4 mb-3">[+] Tambah Data Warga</a>
+            <a href="form-daftar.php" class="btn btn-secondary mt-4 mb-3">[+] Daftar Warga</a>
         </div>
     <?php 
         if(isset($_POST['daftar'])){
